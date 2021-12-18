@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  <script src="./encode.js"></script>
+    <script src="./decode.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+
+    <title>Caeser Encrypter</title>
+    
+    <link rel="icon" type="image/x-icon" href="./apple-touch-icon.png">
+
+    <!-- Styles -->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Nav -->
+      <div class="container">
+           <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+        <img src="./logo.png"  height="50px" width="50px" alt="logo"/>
+        <span class="fs-4">Caeser Encrypter-Decrypter</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link">About </a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      </ul>
+        </header>
+    </div>
+    <footer class="bottom  footerc">
+    <h5 class="text-center text-muted"><marquee>OSS Project 2021 P-2</marquee> </h5>
+    <ul class="nav container justify-content-center border-bottom pb-1 mb-1">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Shrey Maurya (191B243)</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sejal Patne (191B224)</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Shristi Kumari(191B251)</a></li>
+    </ul>
+   </footer> 
+    <!-- Nav -->
+    <!-- Main Body -->
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Caeser Cipher</h1>
+        <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"> Caesar cipher is a shift cipher, one of the most easy and most famous encryption systems. It uses the substitution of a letter by another one further in the alphabet.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Play Now 👇</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="document.location='about.html'">Learn More...</button>
+        </div>
+        </div>
+      </div>
+    <div class="container">
+    <h1>Text to Encode or Decode:</h1>
+	  <input class="text-dark mt-2 mb-3" type="text" id="text" autofocus="true"></input>
+    <h1>Key:</h1>
+  
+  <!-- <p id = "helper">(must be between -26 and 26)</p> -->
+  <input type="number"  class="text-dark"  autofocus="true" id="shift"></input>
+  <br>
+  <button class="mt-2 mb-2 btn btn-md btn-info" onclick=encode() ;> Encode! </button>
+  <button class="mt-2 mb-2 btn btn-md btn-info" onclick=decode();> Decode! </button>
+
+  <!-- output -->
+  <div id="output" class="border-bottom">
+    <h1><marquee>Result Below:</marquee></h1> 
+  </div>
+
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    >
+    </script>
+    
+  </body>
+   
+  
+
+</div>
+</html>

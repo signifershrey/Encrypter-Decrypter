@@ -1,0 +1,31 @@
+* {
+  font-family: "Iceberg", cursive;
+  color: aliceblue;
+}
+
+body {
+  background: #212529;
+}
+
+#eh {
+  margin-left: 7%;
+}
+#enctext,
+#dectext {
+  color: #fff;
+  border: 2px rgb(90, 10, 10) solid;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(71, 145, 194);
+  margin-left: 7%;
+  height: 80px;
+  width: 300px;
+  font-size: larger;
+}
+
+.footerc {
+  position: static;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}
